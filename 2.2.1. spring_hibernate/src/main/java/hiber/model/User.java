@@ -24,10 +24,6 @@ public class User {
     @JoinColumn(name = "cars_id")
     private Car car;
 
-    public Car getCar() {
-        return car;
-    }
-
     public User() {
     }
 
@@ -42,6 +38,10 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.car = car;
+    }
+
+    public Car getCar() {
+        return car;
     }
 
     public Long getId() {
